@@ -35,7 +35,7 @@ class UserProfileForm(forms.ModelForm):
     # longitude = forms.CharField(widget=forms.TextInput(attrs={'readonly': 'readonly'}))
     class Meta:
         model = UserProfile
-        fields = ['profile_picture', 'cover_photo', 'address', 'country',
+        fields = ['profile_picture', 'cover_photo', 'address', 'country', 'suburb',
                   'city', 'pin_code', 'latitude', 'longitude']
 
         # fields = ['profile_picture', 'cover_photo', 'address_line_1', 'address_line_2', 'country',
