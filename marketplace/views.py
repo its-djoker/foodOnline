@@ -135,7 +135,8 @@ def delete_cart(request, cart_id):
             return JsonResponse({'status': 'Failed', 'message': 'Invalid request!'})
 
 
-# def search(request):
+def search(request):
+    return render(request, 'marketplace/listings.html')
 #     if not 'address' in request.GET:
 #         return redirect('marketplace')
 #     else:

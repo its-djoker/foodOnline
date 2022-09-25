@@ -26,6 +26,9 @@ urlpatterns = [
     path('', include('accounts.urls')),
     path('marketplace/', include('marketplace.urls')),
     path('cart/', MarketplaceViews.cart, name='cart'),
-    # path('vendor/', include('vendor.urls')),
+    path('vendor/', include('vendor.urls')),
+    # SEARCH
+    path('search/', MarketplaceViews.search, name='search'),
+
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
