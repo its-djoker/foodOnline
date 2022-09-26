@@ -146,7 +146,7 @@
 												<a href="{% url 'vendor_detail' vendor.vendor_slug %}">{{ vendor }}</a>
 											</h5>
 										</div>
-										{% if vendor.user_profile.city and vendor.user_profile.state and vendor.user_profile.pin_code %}
+										{% if vendor.user_profile.city or vendor.user_profile.state or vendor.user_profile.pin_code %}
 										<span>{{ vendor.user_profile.city }}, {{ vendor.user_profile.state }}, {{ vendor.user_profile.pin_code }}</span>
 										{% endif %}
 
