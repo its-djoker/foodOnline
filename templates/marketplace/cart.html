@@ -88,15 +88,15 @@
                                                     <span id="subtotal">{{ subtotal }}</span>
                                                 </span>
                                             </li>
-                                            <li style="list-style-type: none;">
+                                            {% comment %} <li style="list-style-type: none;">
                                                 Tax
                                                 <span class="price float-right">
                                                     <span class="currency">$</span>
                                                     <span id="tax">{{ tax }}</span>
                                                 </span>
-                                            </li>
+                                            </li> {% endcomment %}
 
-                                            {% comment %} {% for key, value in tax_dict.items %}
+                                            {% for key, value in tax_dict.items %}
                                                 {% for i, j in value.items %}
                                                     <li style="list-style-type: none;">
                                                         {{ key }} <small>({{ i }}%)</small>
@@ -106,7 +106,7 @@
                                                         </span>
                                                     </li>
                                                 {% endfor %}
-                                            {% endfor %} {% endcomment %}
+                                            {% endfor %}
 
 
                                             <li style="list-style-type: none; font-weight: 600;">
