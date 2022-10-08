@@ -33,6 +33,10 @@
 	{% endif %}
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="{% static 'js/custom.js' %}"></script>
+
+    <!-- Include the PayPal JavaScript SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id={{ PAYPAL_CLIENT_ID }}&currency=NZD"></script>
+
     <style>
         body,
         .main-section p,
